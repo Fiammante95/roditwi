@@ -1,0 +1,7 @@
+So, first of all i set up a physical network with a router
+in my case, the gateway was 192.168.8.1
+then in the main window of VirtualBox (not inside the virtual machine) i did file>manage host network>create
+and set the values in DHCP to match those of the real gateway
+i then added this network as "host only" in the VM network settings. I also disabled the default NAT network adapter, otherwise it would give the VM the wrong ip address.
+Then simply start UR simulator, load a program and run. important: robot must be running.
+Then simply started the record.py example with arg --host 192.168.1.100 (which was the IP that DHCP gave to the VM, to know this info just write ifconfig in the UXterminal in the simulated machine)
