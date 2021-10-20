@@ -26,7 +26,7 @@ import argparse
 import logging
 import sys
 sys.path.append('..')
-sys.path.append('./rtde-2.6.0-release/rtde-2.6.0/')
+sys.path.append('rtde-2.6.0-release/rtde-2.6.0/')
 print(sys.path)
 import rtde.rtde as rtde
 import rtde.rtde_config as rtde_config
